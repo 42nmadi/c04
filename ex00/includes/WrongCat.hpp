@@ -1,30 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Dog.hpp                                            :+:      :+:    :+:   */
+/*   WrongCat.hpp                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: nmadi <nmadi@student.42abudhabi.ae>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/03/05 17:40:43 by nmadi             #+#    #+#             */
-/*   Updated: 2023/03/05 18:41:25 by nmadi            ###   ########.fr       */
+/*   Created: 2023/03/05 18:46:44 by nmadi             #+#    #+#             */
+/*   Updated: 2023/03/05 18:52:49 by nmadi            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef DOG_HPP
-# define DOG_HPP
-# include "Animal.hpp"
+#ifndef WRONGCAT_HPP
+# define WRONGCAT_HPP
+# include "WrongAnimal.hpp"
 
-class Dog : public Animal
+class WrongCat : public WrongAnimal
 {
 	public:
 		//* actions
 		void	makeSound() const;
 
 		//* constructors, destructors, and operator overloaders
-		Dog();
-		Dog(const Dog &dog);
-		Dog & operator= (const Dog &copy);
-		~Dog();
+		WrongCat();
+		WrongCat(const WrongCat &wrongcat);
+		WrongCat & operator= (const WrongCat &copy);
+		~WrongCat();
 };
 
 #endif

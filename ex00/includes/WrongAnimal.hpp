@@ -1,30 +1,35 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Dog.hpp                                            :+:      :+:    :+:   */
+/*   WrongAnimal.hpp                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: nmadi <nmadi@student.42abudhabi.ae>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/03/05 17:40:43 by nmadi             #+#    #+#             */
-/*   Updated: 2023/03/05 18:41:25 by nmadi            ###   ########.fr       */
+/*   Created: 2023/03/05 18:48:34 by nmadi             #+#    #+#             */
+/*   Updated: 2023/03/05 18:52:18 by nmadi            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef DOG_HPP
-# define DOG_HPP
+#ifndef WRONGANIMAL_HPP
+# define WRONGANIMAL_HPP
 # include "Animal.hpp"
 
-class Dog : public Animal
+class WrongAnimal
 {
 	public:
 		//* actions
 		void	makeSound() const;
 
+		//* getters
+		std::string const&	getType() const;
+
 		//* constructors, destructors, and operator overloaders
-		Dog();
-		Dog(const Dog &dog);
-		Dog & operator= (const Dog &copy);
-		~Dog();
+		WrongAnimal();
+		WrongAnimal(const WrongAnimal &wronganimal);
+		WrongAnimal & operator= (const WrongAnimal &copy);
+		~WrongAnimal();
+	protected:
+		std::string	type;
 };
 
 #endif
