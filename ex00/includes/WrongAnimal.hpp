@@ -6,13 +6,14 @@
 /*   By: nmadi <nmadi@student.42abudhabi.ae>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/05 18:48:34 by nmadi             #+#    #+#             */
-/*   Updated: 2023/03/05 18:52:18 by nmadi            ###   ########.fr       */
+/*   Updated: 2023/03/05 18:58:21 by nmadi            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef WRONGANIMAL_HPP
 # define WRONGANIMAL_HPP
-# include "Animal.hpp"
+# include <iostream>
+# include <string>
 
 class WrongAnimal
 {
