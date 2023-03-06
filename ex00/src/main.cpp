@@ -6,7 +6,7 @@
 /*   By: nmadi <nmadi@student.42abudhabi.ae>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/05 18:24:33 by nmadi             #+#    #+#             */
-/*   Updated: 2023/03/05 18:55:57 by nmadi            ###   ########.fr       */
+/*   Updated: 2023/03/06 06:46:36 by nmadi            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,5 +27,9 @@ int	main()
 	i->makeSound();
 	j->makeSound();
 	meta->makeSound();
+
+	delete i;
+	delete j;
+	delete meta;
 	return (0);
 }

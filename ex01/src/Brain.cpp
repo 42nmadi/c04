@@ -6,7 +6,7 @@
 /*   By: nmadi <nmadi@student.42abudhabi.ae>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/05 19:06:24 by nmadi             #+#    #+#             */
-/*   Updated: 2023/03/05 19:15:37 by nmadi            ###   ########.fr       */
+/*   Updated: 2023/03/06 10:22:59 by nmadi            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,11 +29,16 @@ Brain& Brain::operator= (const Brain &copy)
 {
 	std::cout << "Brain copy assignment operator called" << std::endl;
 	if (this != &copy)
-		//! Менять это надо
+	{
+		for (int i = 0; i < 100; i++)
+		{
+			this->ideas[i] = copy.getIdea(i);
+		}
+	}
 	return (*this);
 }
 
-std::string const&	Brain::getIdea(unsigned int i)
+std::string	Brain::getIdea(unsigned int i) const
 {
 	if (i < 100)
 		return (this->ideas[i]);

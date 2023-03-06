@@ -6,7 +6,7 @@
 #    By: nmadi <nmadi@student.42abudhabi.ae>        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/03/05 18:58:57 by nmadi             #+#    #+#              #
-#    Updated: 2023/03/05 18:58:58 by nmadi            ###   ########.fr        #
+#    Updated: 2023/03/06 10:14:32 by nmadi            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -17,6 +17,7 @@ SRCS = ./src/Animal.cpp \
 		./src/Dog.cpp \
 		./src/WrongCat.cpp \
 		./src/WrongAnimal.cpp \
+		./src/Brain.cpp \
 		./src/main.cpp
 
 OBJS = $(SRCS:cpp=o)

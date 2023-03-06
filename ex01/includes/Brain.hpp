@@ -6,7 +6,7 @@
 /*   By: nmadi <nmadi@student.42abudhabi.ae>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/05 18:59:25 by nmadi             #+#    #+#             */
-/*   Updated: 2023/03/05 19:24:50 by nmadi            ###   ########.fr       */
+/*   Updated: 2023/03/06 10:27:14 by nmadi            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ class Brain
 		std::string	ideas[100];
 	public:
 		//* getters
-		std::string const&	getIdea(unsigned int i);
+		std::string	getIdea(unsigned int i) const;
 
 		//* setters
 		void	setIdea(std::string idea, unsigned int i);

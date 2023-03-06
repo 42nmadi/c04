@@ -6,13 +6,14 @@
 /*   By: nmadi <nmadi@student.42abudhabi.ae>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/05 17:40:43 by nmadi             #+#    #+#             */
-/*   Updated: 2023/03/05 18:41:25 by nmadi            ###   ########.fr       */
+/*   Updated: 2023/03/06 10:41:46 by nmadi            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef DOG_HPP
 # define DOG_HPP
 # include "Animal.hpp"
+# include "Brain.hpp"
 
 class Dog : public Animal
 {
@@ -25,6 +26,8 @@ class Dog : public Animal
 		Dog(const Dog &dog);
 		Dog & operator= (const Dog &copy);
 		~Dog();
+	private:
+		Brain	*brain;
 };
 
 #endif
