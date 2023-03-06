@@ -6,7 +6,7 @@
 /*   By: nmadi <nmadi@student.42abudhabi.ae>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/05 17:40:43 by nmadi             #+#    #+#             */
-/*   Updated: 2023/03/06 10:41:46 by nmadi            ###   ########.fr       */
+/*   Updated: 2023/03/06 11:23:53 by nmadi            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,6 +20,9 @@ class Dog : public Animal
 	public:
 		//* actions
 		void	makeSound() const;
+
+		//* getters
+		Brain	*getBrain(void) const;
 
 		//* constructors, destructors, and operator overloaders
 		Dog();

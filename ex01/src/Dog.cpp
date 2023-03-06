@@ -6,7 +6,7 @@
 /*   By: nmadi <nmadi@student.42abudhabi.ae>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/05 18:41:36 by nmadi             #+#    #+#             */
-/*   Updated: 2023/03/06 10:41:38 by nmadi            ###   ########.fr       */
+/*   Updated: 2023/03/06 11:23:25 by nmadi            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,3 +47,5 @@ void	Dog::makeSound() const
 {
 	std::cout << "Woof!" << std::endl;
 }
+
+Brain	*Dog::getBrain() const {return(this->brain);}

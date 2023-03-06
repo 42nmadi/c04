@@ -6,7 +6,7 @@
 /*   By: nmadi <nmadi@student.42abudhabi.ae>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/05 18:39:33 by nmadi             #+#    #+#             */
-/*   Updated: 2023/03/06 06:46:54 by nmadi            ###   ########.fr       */
+/*   Updated: 2023/03/06 11:23:32 by nmadi            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,3 +47,5 @@ void	Cat::makeSound() const
 {
 	std::cout << "Meow!" << std::endl;
 }
+
+Brain	*Cat::getBrain() const {return(this->brain);}

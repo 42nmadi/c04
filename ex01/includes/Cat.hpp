@@ -6,7 +6,7 @@
 /*   By: nmadi <nmadi@student.42abudhabi.ae>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/05 17:40:20 by nmadi             #+#    #+#             */
-/*   Updated: 2023/03/06 10:41:48 by nmadi            ###   ########.fr       */
+/*   Updated: 2023/03/06 11:15:14 by nmadi            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,6 +20,9 @@ class Cat : public Animal
 	public:
 		//* actions
 		void	makeSound() const;
+
+		//* getters
+		Brain	*getBrain(void) const;
 
 		//* constructors, destructors, and operator overloaders
 		Cat();
