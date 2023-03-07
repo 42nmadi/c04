@@ -6,7 +6,7 @@
 /*   By: nmadi <nmadi@student.42abudhabi.ae>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/06 10:59:58 by nmadi             #+#    #+#             */
-/*   Updated: 2023/03/06 11:23:47 by nmadi            ###   ########.fr       */
+/*   Updated: 2023/03/07 19:13:29 by nmadi            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,6 +38,7 @@ Dog& Dog::operator= (const Dog &copy)
 	if (this != &copy)
 	{
 		this->type = copy.getType();
+		delete this->brain;
 		this->brain = new Brain(*copy.brain);
 	}
 	return (*this);

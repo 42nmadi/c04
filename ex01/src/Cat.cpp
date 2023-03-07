@@ -6,7 +6,7 @@
 /*   By: nmadi <nmadi@student.42abudhabi.ae>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/05 18:39:33 by nmadi             #+#    #+#             */
-/*   Updated: 2023/03/06 11:23:32 by nmadi            ###   ########.fr       */
+/*   Updated: 2023/03/07 19:13:19 by nmadi            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,6 +38,7 @@ Cat& Cat::operator= (const Cat &copy)
 	if (this != &copy)
 	{
 		this->type = copy.getType();
+		delete this->brain;
 		this->brain = new Brain(*copy.brain);
 	}
 	return (*this);
