@@ -6,7 +6,7 @@
 /*   By: nmadi <nmadi@student.42abudhabi.ae>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/06 11:00:15 by nmadi             #+#    #+#             */
-/*   Updated: 2023/03/06 11:05:50 by nmadi            ###   ########.fr       */
+/*   Updated: 2023/03/07 20:29:17 by nmadi            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,18 +19,18 @@ class AAnimal
 {
 	public:
 		//* actions
-		virtual void	makeSound() const;
+		virtual void	makeSound() const = 0;
 
 		//* getters
 		std::string const&	getType() const;
 
 		//* constructors, destructors, and operator overloaders
+		AAnimal();
+		AAnimal(const AAnimal &aanimal);
 		AAnimal & operator= (const AAnimal &copy);
 		virtual	~AAnimal();
 	protected:
 		std::string	type;
-		AAnimal();
-		AAnimal(const AAnimal &aanimal);
 };
 
 #endif
