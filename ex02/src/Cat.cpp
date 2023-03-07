@@ -6,7 +6,7 @@
 /*   By: nmadi <nmadi@student.42abudhabi.ae>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/06 10:59:53 by nmadi             #+#    #+#             */
-/*   Updated: 2023/03/07 19:13:25 by nmadi            ###   ########.fr       */
+/*   Updated: 2023/03/07 19:16:37 by nmadi            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,6 +22,7 @@ Cat::Cat()
 Cat::Cat(const Cat &cat) : AAnimal()
 {
 	std::cout << "Cat copy constructor called" << std::endl;
+	this->brain = NULL;
 	*this = cat;
 }
 
@@ -38,7 +39,8 @@ Cat& Cat::operator= (const Cat &copy)
 	if (this != &copy)
 	{
 		this->type = copy.getType();
-		delete this->brain;
+		if (this->brain != NULL)
+			delete this->brain;
 		this->brain = new Brain(*copy.brain);
 	}
 	return (*this);
